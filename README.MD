@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- dotNet Core 3.1
+- dotNet 5.0
 
 ## Usage
 
