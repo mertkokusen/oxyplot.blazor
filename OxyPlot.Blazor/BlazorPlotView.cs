@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
 using Microsoft.AspNetCore.Components.Web;
@@ -291,7 +288,7 @@ namespace OxyPlot.Blazor
             builder.AddElementReferenceCapture(8, elementReference =>
             {
                 _svg = elementReference;
-                _timer.Enabled = _svg.Id != null;
+                //_timer.Enabled = _svg.Id != null;
             });
             if (_svgPos.Width > 0)
             {
@@ -379,8 +376,8 @@ namespace OxyPlot.Blazor
 
         protected override void OnAfterRender(bool firstRender)
         {
-            if (firstRender)
-                _timer.Elapsed += UpdateSvgBoundingRect;
+            //if (firstRender)
+            //    _timer.Elapsed += UpdateSvgBoundingRect;
             UpdateSvgBoundingRect(null, EventArgs.Empty);
         }
 

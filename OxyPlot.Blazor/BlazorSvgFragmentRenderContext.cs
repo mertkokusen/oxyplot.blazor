@@ -7,19 +7,15 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+using Microsoft.AspNetCore.Components.Rendering;
+using System.Text.RegularExpressions;
+
 namespace OxyPlot.Blazor
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.IO;
-    using System.Text;
-    using Microsoft.AspNetCore.Components.Rendering;
-    using Microsoft.AspNetCore.Components.Web;
-    using Microsoft.AspNetCore.Components;
-    using System.Threading.Tasks;
-    using System.Text.RegularExpressions;
-
     /// <summary>
     /// Provides a render context for scalable vector graphics output.
     /// </summary>
